@@ -1,9 +1,50 @@
 # Audio Files and Folders
-audioFiles/
-audioFiles/sourceAudio/
-audioFiles/mergedAudio/
-audioFiles/outputAudio/
-audioProcesses/*/outputAudio/
+# Allow folders to be tracked but ignore audio files within them
+audioFiles/*.mp3
+audioFiles/*.wav
+audioFiles/*.m4a
+audioFiles/*.flac
+audioFiles/*.aac
+audioFiles/*.ogg
+audioFiles/*.wma
+audioFiles/*.aiff
+audioFiles/*.au
+audioFiles/sourceAudio/*.mp3
+audioFiles/sourceAudio/*.wav
+audioFiles/sourceAudio/*.m4a
+audioFiles/sourceAudio/*.flac
+audioFiles/sourceAudio/*.aac
+audioFiles/sourceAudio/*.ogg
+audioFiles/sourceAudio/*.wma
+audioFiles/sourceAudio/*.aiff
+audioFiles/sourceAudio/*.au
+audioFiles/mergedAudio/*.mp3
+audioFiles/mergedAudio/*.wav
+audioFiles/mergedAudio/*.m4a
+audioFiles/mergedAudio/*.flac
+audioFiles/mergedAudio/*.aac
+audioFiles/mergedAudio/*.ogg
+audioFiles/mergedAudio/*.wma
+audioFiles/mergedAudio/*.aiff
+audioFiles/mergedAudio/*.au
+audioFiles/outputAudio/*.mp3
+audioFiles/outputAudio/*.wav
+audioFiles/outputAudio/*.m4a
+audioFiles/outputAudio/*.flac
+audioFiles/outputAudio/*.aac
+audioFiles/outputAudio/*.ogg
+audioFiles/outputAudio/*.wma
+audioFiles/outputAudio/*.aiff
+audioFiles/outputAudio/*.au
+audioProcesses/*/outputAudio/*.mp3
+audioProcesses/*/outputAudio/*.wav
+audioProcesses/*/outputAudio/*.m4a
+audioProcesses/*/outputAudio/*.flac
+audioProcesses/*/outputAudio/*.aac
+audioProcesses/*/outputAudio/*.ogg
+audioProcesses/*/outputAudio/*.wma
+audioProcesses/*/outputAudio/*.aiff
+audioProcesses/*/outputAudio/*.au
 
 # Audio file formats
 *.mp3
