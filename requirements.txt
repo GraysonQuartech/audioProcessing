@@ -1,0 +1,10 @@
+# Courtroom Audio Processor Dependencies
+# All processing happens locally - no data leaves your computer!
+
+# Core dependencies
+noisereduce
+librosa
+soundfile
+torch
+numpy
+tqdm
