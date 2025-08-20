@@ -20,7 +20,7 @@ TIPS:
 # =============================================================================
 
 # Input and output directories
-INPUT_DIRECTORY = "../../audioFiles/mergedAudio"         # Folder containing your merged MP3 files
+INPUT_DIRECTORY = "../../audioFiles/workingAudio"         # Folder containing your merged MP3 files
 OUTPUT_DIRECTORY = "../../audioFiles/outputAudio"         # Folder where cleaned files will be saved
 
 # File naming
