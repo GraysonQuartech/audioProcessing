@@ -143,7 +143,7 @@ def main():
     print("=" * 50)
     
     # Configuration
-    input_directory = "../../audioFiles/sourceAudio"  # Updated to use correct sourceAudio folder
+    input_directory = "../../audioFiles/workingAudio"  # Updated to use correct sourceAudio folder
     output_directory = "../../audioFiles/mergedAudio"   # Updated to use correct mergedAudio folder
     output_filename = "merged_audio.mp3"
     target_sample_rate = 44100  # 44.1 kHz

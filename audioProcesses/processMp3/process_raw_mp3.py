@@ -22,7 +22,6 @@ CONFIG = config.get_config()
 # Import processing classes directly from individual files
 import sys
 sys.path.append('..')
-from normalize import AudioNormalizer
 from torchgate import TorchGateProcessor
 from noisegate import NoiseGateProcessor
 
@@ -72,12 +71,7 @@ def process_file(input_file: Path, output_file: Path, processors: dict) -> bool:
             logger.info("Applying TorchGate AI noise removal...")
             audio = processors['torchgate'].apply_torchgate(audio, sample_rate)
         
-        # STEP 4: Normalize volume
-        if processors.get('normalizer'):
-            logger.info("Normalizing audio...")
-            audio = processors['normalizer'].normalize_audio(audio)
-        
-        # STEP 5: Save processed audio
+        # STEP 4: Save processed audio
         save_audio(audio, sample_rate, output_file)
         
         processing_time = time.time() - start_time
@@ -137,11 +131,7 @@ def main():
         device=device
     )
     
-    # Initialize normalizer
-    processors['normalizer'] = AudioNormalizer(
-        target_db=CONFIG.get("NORMALIZATION_TARGET_DB", -24.0),
-        max_amplitude=1.0
-    )
+
     
     # Initialize noise gate if enabled in config
     noise_gate_enabled = CONFIG.get("ENABLE_NOISE_GATE", False)
