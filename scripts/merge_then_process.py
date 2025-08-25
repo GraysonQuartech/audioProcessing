@@ -226,6 +226,7 @@ class AudioPipeline:
     
     def run_pipeline(self) -> bool:
         """Run the complete audio processing pipeline."""
+        pipeline_start_time = time.time()
         logger.info("🎵 Starting Audio Processing Pipeline")
         logger.info("=" * 60)
         
@@ -261,6 +262,10 @@ class AudioPipeline:
         
         if output_files:
             logger.info(f"  Final output: {output_files[0].name}")
+        
+        # Calculate total pipeline time
+        pipeline_total_time = time.time() - pipeline_start_time
+        logger.info(f"⏱️  Total pipeline time: {pipeline_total_time:.2f}s")
         
         return True
 

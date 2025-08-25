@@ -20,8 +20,8 @@ TIPS:
 # =============================================================================
 
 # Input and output directories
-INPUT_DIRECTORY = "../../audioFiles/sourceAudio"         # Folder containing your individual MP3 files
-OUTPUT_DIRECTORY = "../../audioFiles/workingAudio"         # Folder where cleaned files will be saved
+INPUT_DIRECTORY = "../../audioFiles/outputAudio"         # Folder containing your individual MP3 files
+OUTPUT_DIRECTORY = "../../audioFiles/mergedAudio"         # Folder where cleaned files will be saved
 
 # File naming
 OUTPUT_FILE_PREFIX = "processed_"         # Prefix added to cleaned files (e.g., "processed_audio.mp3")

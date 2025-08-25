@@ -269,6 +269,7 @@ class ProcessThenMergePipeline:
     
     def run_pipeline(self, cleanup: bool = True) -> bool:
         """Run the complete process-then-merge audio processing pipeline."""
+        pipeline_start_time = time.time()
         logger.info("🎵 Starting Process-Then-Merge Audio Pipeline")
         logger.info("=" * 60)
         
@@ -313,6 +314,10 @@ class ProcessThenMergePipeline:
         
         if merged_files:
             logger.info(f"  Final output: {merged_files[0].name}")
+        
+        # Calculate total pipeline time
+        pipeline_total_time = time.time() - pipeline_start_time
+        logger.info(f"⏱️  Total pipeline time: {pipeline_total_time:.2f}s")
         
         return True
 

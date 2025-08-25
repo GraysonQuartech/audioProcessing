@@ -142,11 +142,14 @@ def main():
     print("Audio Merger Script")
     print("=" * 50)
     
-    # Configuration
-    input_directory = "../../audioFiles/workingAudio"  # Updated to use correct sourceAudio folder
-    output_directory = "../../audioFiles/mergedAudio"   # Updated to use correct mergedAudio folder
-    output_filename = "merged_audio.mp3"
-    target_sample_rate = 44100  # 44.1 kHz
+    # Import configuration
+    from config import INPUT_DIRECTORY, OUTPUT_DIRECTORY, OUTPUT_FILE_PREFIX, OUTPUT_SAMPLE_RATE
+    
+    # Configuration from config file
+    input_directory = INPUT_DIRECTORY
+    output_directory = OUTPUT_DIRECTORY
+    output_filename = f"{OUTPUT_FILE_PREFIX}audio.mp3"
+    target_sample_rate = OUTPUT_SAMPLE_RATE
     
     # Create output directory if it doesn't exist
     output_path = Path(output_directory)

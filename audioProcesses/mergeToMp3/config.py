@@ -16,8 +16,8 @@ HOW TO USE:
 # =============================================================================
 
 # Input and output directories
-INPUT_DIRECTORY = "audioFiles/workingAudio"     # Folder containing your original audio files
-OUTPUT_DIRECTORY = "audioFiles/outputAudio"    # Folder where merged files will be saved
+INPUT_DIRECTORY = "../../audioFiles/workingAudio"     # Folder containing your original audio files
+OUTPUT_DIRECTORY = "../../audioFiles/outputAudio"    # Folder where merged files will be saved
 
 # File naming
 OUTPUT_FILE_PREFIX = "merged_"         # Prefix added to merged files (e.g., "merged_audio.mp3")
